@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" data-default-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>FitCheck Practice</title>
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="/toggle.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">FitCheck Coach</a>
+    <div class="tools" aria-label="Language">
+      <a class="nav-link" href="/practice/">Practice</a>
+      <button type="button" class="lang-button" data-lang-button="fr" aria-pressed="false" lang="fr">FR</button>
+      <button type="button" class="lang-button" data-lang-button="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+  </header>
+  <main class="practice-shell lang-panel" lang="fr" data-lang-panel="fr">
+    <section class="practice-hero">
+      <p class="eyebrow">FitCheck Coach</p>
+      <h1>Pratique, score, améliore</h1>
+      <p>Réponds à une question, puis FitCheck compare ta réponse au JD, à tes preuves, et à la qualité de ton français.</p>
+    </section>
+    <section class="practice-app" data-practice-root data-practice-lang="fr">
+      <div class="practice-controls">
+        <label>Rôle
+          <select data-practice-role>
+            <option value="accelerator">FinTech Accelerator Lead</option>
+            <option value="delivery">AI Delivery Manager</option>
+          </select>
+        </label>
+        <label>Durée
+          <select data-practice-duration>
+            <option value="90">90s</option>
+            <option value="120">120s</option>
+            <option value="180">180s</option>
+          </select>
+        </label>
+        <button type="button" data-practice-start>Commencer</button>
+      </div>
+      <div class="practice-grid">
+        <section class="interviewer-card">
+          <div class="interviewer-topline">
+            <span data-practice-role-title></span>
+            <strong data-practice-timer>--:--</strong>
+          </div>
+          <h2>Question</h2>
+          <p class="practice-question" data-practice-question>Clique Commencer pour lancer la simulation.</p>
+          <div class="practice-actions">
+            <button type="button" data-practice-prev>Précédente</button>
+            <button type="button" data-practice-next>Suivante</button>
+            <button type="button" data-practice-coach>Voir coaching</button>
+          </div>
+          <div class="coach-card" data-practice-coach-panel hidden>
+            <h3>Ce qu'il faut viser</h3>
+            <p data-practice-coach-text></p>
+            <h3>Signal JD</h3>
+            <p data-practice-jd></p>
+            <h3>Preuves à placer</h3>
+            <ul data-practice-proof></ul>
+          </div>
+        </section>
+        <section class="answer-card">
+          <label for="practice-answer-fr">Notes de réponse</label>
+          <textarea id="practice-answer-fr" data-practice-answer placeholder="Tape tes points clés ici. Tu peux aussi répondre à voix haute et noter les mots que tu as placés."></textarea>
+          <div class="practice-actions">
+            <button type="button" data-practice-dictate>Dicter</button>
+            <button type="button" data-practice-score>Score local</button>
+            <button type="button" data-practice-agent>Réponse coach</button>
+            <button type="button" data-practice-clear>Effacer</button>
+          </div>
+          <div class="agent-card">
+            <h3>Intervieweur FitCheck</h3>
+            <p data-practice-agent-text>Clique « Réponse coach » pour recevoir un retour parlé, comme dans une vraie entrevue.</p>
+          </div>
+          <div class="score-card">
+            <h3>Feedback FitCheck</h3>
+            <p data-practice-score-text>Le feedback apparaîtra ici.</p>
+            <ul class="feedback-list" data-practice-score-list></ul>
+          </div>
+          <div class="history-card">
+            <div class="history-head">
+              <h3>Progrès</h3>
+              <button type="button" data-practice-history-clear>Réinitialiser</button>
+            </div>
+            <p data-practice-history-summary>Score une réponse pour créer ton historique.</p>
+            <ol class="history-list" data-practice-history-list></ol>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <main class="practice-shell lang-panel" lang="en" data-lang-panel="en">
+    <section class="practice-hero">
+      <p class="eyebrow">FitCheck Coach</p>
+      <h1>Practice, score, improve</h1>
+      <p>Answer a question, then FitCheck compares your response against the JD, proof points, structure, and delivery.</p>
+    </section>
+    <section class="practice-app" data-practice-root data-practice-lang="en">
+      <div class="practice-controls">
+        <label>Role
+          <select data-practice-role>
+            <option value="accelerator">FinTech Accelerator Lead</option>
+            <option value="delivery">AI Delivery Manager</option>
+          </select>
+        </label>
+        <label>Timer
+          <select data-practice-duration>
+            <option value="90">90s</option>
+            <option value="120">120s</option>
+            <option value="180">180s</option>
+          </select>
+        </label>
+        <button type="button" data-practice-start>Start</button>
+      </div>
+      <div class="practice-grid">
+        <section class="interviewer-card">
+          <div class="interviewer-topline">
+            <span data-practice-role-title></span>
+            <strong data-practice-timer>--:--</strong>
+          </div>
+          <h2>Question</h2>
+          <p class="practice-question" data-practice-question>Click Start to begin the simulation.</p>
+          <div class="practice-actions">
+            <button type="button" data-practice-prev>Previous</button>
+            <button type="button" data-practice-next>Next</button>
+            <button type="button" data-practice-coach>Show coaching</button>
+          </div>
+          <div class="coach-card" data-practice-coach-panel hidden>
+            <h3>What to aim for</h3>
+            <p data-practice-coach-text></p>
+            <h3>JD signal</h3>
+            <p data-practice-jd></p>
+            <h3>Proof to place</h3>
+            <ul data-practice-proof></ul>
+          </div>
+        </section>
+        <section class="answer-card">
+          <label for="practice-answer-en">Answer notes</label>
+          <textarea id="practice-answer-en" data-practice-answer placeholder="Type your key points here. You can also answer out loud and jot the words you landed."></textarea>
+          <div class="practice-actions">
+            <button type="button" data-practice-dictate>Dictate</button>
+            <button type="button" data-practice-score>Local score</button>
+            <button type="button" data-practice-agent>Coach reply</button>
+            <button type="button" data-practice-clear>Clear</button>
+          </div>
+          <div class="agent-card">
+            <h3>FitCheck interviewer</h3>
+            <p data-practice-agent-text>Click Coach reply to get spoken feedback, like a real interview.</p>
+          </div>
+          <div class="score-card">
+            <h3>FitCheck feedback</h3>
+            <p data-practice-score-text>Feedback will appear here.</p>
+            <ul class="feedback-list" data-practice-score-list></ul>
+          </div>
+          <div class="history-card">
+            <div class="history-head">
+              <h3>Progress</h3>
+              <button type="button" data-practice-history-clear>Reset</button>
+            </div>
+            <p data-practice-history-summary>Score an answer to start your history.</p>
+            <ol class="history-list" data-practice-history-list></ol>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <script id="practice-data" type="application/json">{"en":{"accelerator":{"title":"FinTech Accelerator Lead","focus":"Screening for founder coaching, partner activation, program ownership, and measurable startup growth.","jdSignals":["accelerator","startup advisory","partner activation","program management","growth metrics","fintech"],"proof":["Founder coaching","Commercial pipeline design","Partner activation","Fintech data governance"],"proofSignals":["founder","pipeline","partner","fintech","data","growth","coaching","metric"],"gap":"If you lack formal fund-side investing experience, frame yourself as the operator founders need beside them.","questions":[{"q":"Walk me through your background and why this accelerator role now.","jd":"They need a credible operator who can coach founders and activate an ecosystem.","coach":"Lead with founder-side pattern recognition, measurable growth work, and practical coaching.","terms":["founder","operator","accelerator","fintech","growth","coaching"],"improve":"Add one sentence that links your operator experience directly to resident founders."},{"q":"How would you improve the resident startup experience in the first 90 days?","jd":"They are testing program ownership, diagnostics, partner use, and measurable outcomes.","coach":"Say diagnostic first, then segment startups, map partners, set KPIs, and create follow-up rhythm.","terms":["diagnostic","segment","partners","KPI","90 days","follow-up"],"improve":"Name a first 90-day operating rhythm: diagnostic, segmentation, partner map, office hours, KPI review."},{"q":"What question would you ask that helps your candidacy?","jd":"A strong question should make them picture you solving their most urgent problem.","coach":"Ask what they need to see in the first 90 days to trust you with founders and partners.","terms":["90 days","trust","founders","partners","first"],"improve":"Ask what success would need to look like in your first 90 days."}]},"delivery":{"title":"AI Delivery Manager","focus":"Screening for client discovery, AI roadmap, delivery risk management, adoption, and measurable ROI.","jdSignals":["AI delivery","client discovery","roadmap","adoption","risk","ROI"],"proof":["AI adoption roadmap","Workflow redesign","Stakeholder alignment","Measured delivery outcomes"],"proofSignals":["AI","client","workflow","stakeholder","adoption","metric","roadmap","risk"],"gap":"If you lack deep vertical specialization, bridge with structured discovery, domain-expert pairing, and fast learning loops.","questions":[{"q":"Tell me why you fit an AI Delivery Manager role.","jd":"They need a client-facing delivery manager who can turn business pain into AI work that lands.","coach":"Position yourself between strategy, client alignment, delivery, and adoption.","terms":["strategy","delivery","adoption","client","AI","roadmap"],"improve":"Anchor on one measured delivery proof point, then name how you de-risk adoption."},{"q":"How do you turn a client problem into AI use cases and a roadmap?","jd":"They are testing whether you can run discovery before solutioning.","coach":"Start with business pain, users, data, value case, roadmap, pilot, and adoption metrics.","terms":["business pain","users","data","value","roadmap","metrics"],"improve":"Make the sequence explicit: pain, users, data, value case, roadmap, pilot, adoption metric."},{"q":"How would you handle a gap in deep vertical expertise?","jd":"They are checking self-awareness and whether you can learn context without slowing delivery.","coach":"Acknowledge the gap, then bridge with discovery, domain experts, and structured learning.","terms":["gap","domain experts","delivery","learn","discovery"],"improve":"Use the gap, bridge, plan structure: acknowledge it, cite your learning system, explain pairing."}]}},"fr":{"accelerator":{"title":"FinTech Accelerator Lead","focus":"On teste coaching fondateur, activation partenaires, ownership du programme et croissance mesurable.","jdSignals":["accélérateur","advisory startup","activation partenaires","gestion programme","metrics croissance","fintech"],"proof":["Coaching fondateur","Design de pipeline commercial","Activation partenaires","Gouvernance data fintech"],"proofSignals":["fondateur","pipeline","partenaire","fintech","data","croissance","coaching","metric"],"gap":"Si tu n'as pas d'expérience formelle côté fonds, cadre ton profil comme opérateur utile aux fondateurs.","questions":[{"q":"Présentez votre background et pourquoi ce rôle d'accélération maintenant.","jd":"Ils cherchent un opérateur crédible qui peut coacher des fondateurs et activer un écosystème.","coach":"Commence avec expérience côté fondateur, croissance mesurable et coaching pratique.","terms":["fondateur","opérateur","accélérateur","fintech","croissance","coaching"],"improve":"Ajoute une phrase qui connecte ton expérience opérateur aux fondateurs résidents."},{"q":"Comment amélioreriez-vous l'expérience des startups dans les 90 premiers jours ?","jd":"Ils testent ownership programme, diagnostic, partenaires et résultats mesurables.","coach":"Dis diagnostic, segmentation, partner map, KPI, et rythme de follow-up.","terms":["diagnostic","segmenter","partenaires","KPI","90 jours","follow-up"],"improve":"Nomme le rythme: diagnostic, segmentation, partner map, office hours, review KPI."},{"q":"Quelle question poseriez-vous pour aider votre candidature ?","jd":"Une bonne question doit les aider à t'imaginer sur leur problème urgent.","coach":"Demande ce qu'ils veulent voir dans les 90 premiers jours pour te faire confiance.","terms":["90 jours","confiance","fondateurs","partenaires","first"],"improve":"Demande à quoi ressemble le succès dans tes 90 premiers jours."}]},"delivery":{"title":"AI Delivery Manager","focus":"On teste discovery client, roadmap IA, delivery risk, adoption et ROI mesurable.","jdSignals":["AI delivery","client discovery","roadmap","adoption","risk","ROI"],"proof":["Roadmap AI adoption","Workflow redesign","Alignement stakeholders","Delivery outcomes mesurés"],"proofSignals":["AI","client","workflow","stakeholder","adoption","metric","roadmap","risk"],"gap":"Si tu n'es pas spécialiste deep d'un vertical, bridge avec discovery structurée, experts domaine et learning loops.","questions":[{"q":"Pourquoi êtes-vous un bon fit pour un rôle AI Delivery Manager ?","jd":"Ils cherchent un delivery manager client-facing qui transforme un business pain en travail IA qui atterrit.","coach":"Positionne-toi entre stratégie, client alignment, delivery et adoption.","terms":["stratégie","delivery","adoption","client","AI","roadmap"],"improve":"Ancre sur une preuve delivery mesurée, puis explique comment tu de-risk l'adoption."},{"q":"Comment transformez-vous un problème client en use cases IA et roadmap ?","jd":"Ils testent si tu peux faire discovery avant de solutionner.","coach":"Commence avec business pain, users, data, value case, roadmap, pilot, adoption metrics.","terms":["business pain","users","data","value","roadmap","metrics"],"improve":"Rends la séquence claire: pain, users, data, value case, roadmap, pilot, adoption metric."},{"q":"Comment gérez-vous un gap de spécialisation verticale ?","jd":"Ils testent self-awareness et capacité à apprendre sans ralentir le delivery.","coach":"Reconnais le gap, puis bridge avec discovery, experts domaine et learning loops.","terms":["gap","domain experts","delivery","learn","discovery"],"improve":"Structure: reconnaître le gap, citer ton système d'apprentissage, expliquer le pairing."}]}}}</script>
+  <script defer src="/practice.js"></script>
+</body>
+</html>
