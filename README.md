@@ -8,6 +8,7 @@ It helps a user practise role-specific interview questions, score answers agains
 
 - JD-fit scoring for interview answers
 - French delivery feedback with verb swaps and simpler sentence templates
+- Voice interview mode that asks questions aloud and listens where browser speech recognition is supported
 - Spoken coach replies using browser text-to-speech
 - Local progress history by role, language, and question
 - Bilingual English/French practice mode
@@ -45,3 +46,19 @@ The public demo uses generic sample roles:
 - AI Delivery Manager
 
 The content is intentionally anonymized and does not include private interview notes, meeting links, recruiter details, or personal contact information.
+
+## Product Status
+
+Current:
+
+- Local-first interview practice
+- Voice mock interview mode
+- French verbing and fluency feedback
+- Local answer and progress history
+
+Next:
+
+- Adaptive follow-up questions
+- Session summaries and improvement plans
+- Importable job descriptions
+- Optional AI Gateway-powered interviewer responses
